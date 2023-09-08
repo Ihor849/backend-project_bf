@@ -1,18 +1,17 @@
 {
   "name": "backend-project_bf",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
+  "repository": "https://github.com/Ihor849/backend-project_bf.git",
+  "author": "Ihor849 <Marchelo849@outlook.com>",
+  "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cross-env NODE_ENV=production node src/server.js",
-    "dev": "cross-env NODE_ENV=development nodemon src/server.js",
+    "start": "cross-env NODE_ENV=production node ./src/server.js",
+    "dev": "cross-env NODE_ENV=development nodemon ./src/server.js",
+    "client": "npm start --prefix frontend",
     "lint": "eslint **/*.js",
     "lint:fix": "eslint --fix **/*.js"
   },
-  "keywords": [],
-  "author": "Ihor",
-  "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.1",
     "cloudinary": "^1.40.0",
@@ -22,22 +21,15 @@
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "express-async-handler": "^1.2.0",
-    "joi": "^17.9.2",
-    "jsonwebtoken": "^9.0.1",
+    "joi": "^17.10.1",
+    "jsonwebtoken": "^9.0.2",
     "mongoose": "^7.5.0",
     "morgan": "^1.10.0",
     "multer": "^1.4.5-lts.1",
     "multer-storage-cloudinary": "^4.0.0",
-    "nanoid": "^4.0.2",
-    "swagger-ui-express": "^5.0.0"
+    "nanoid": "^4.0.2"
   },
   "devDependencies": {
-    "eslint": "7.19.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-config-standard": "16.0.3",
-    "eslint-plugin-import": "2.25.3",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "5.2.0",
-    "nodemon": "2.0.15"
+    "nodemon": "^3.0.1"
   }
 }
