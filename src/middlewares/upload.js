@@ -23,7 +23,7 @@ const storage = new CloudinaryStorage({
 
   params: async (req, file) => {
     const { _id } = req.user;
-    // console.log(req.user);
+    
     const originalnameWithoutType = file.originalname.replace(
       /\.(jpe?g|png)$/i,
       ""

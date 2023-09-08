@@ -1,8 +1,3 @@
-// const path = require('path');
-// const configPath = path.join(__dirname,'..','..','..','config','.env');
-
-// require('dotenv').config({ path: configPath });
-
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
